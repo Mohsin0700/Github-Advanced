@@ -31,37 +31,49 @@
                 <h3>Git Status"</h3>
                 <p>This command is used to check the status of the git
                     repository.</p>
-                    <p><b>Note: Whenever we use this command it shows 4 type of options/statuses</b></p>
-                    <ul>
-                        <li><h4>Untracked files</h4>
+                <p><b>Note: Whenever we use this command it shows 4 type of
+                        options/statuses</b></p>
+                <ul>
+                    <li><h4>Untracked files</h4>
                         <p>This is a file which is not tracked by git</p>
-                        </li>
+                    </li>
 
-                        <li><h4>Modified / Unstaged Files</h4>
-                        <p>This is a file which is not staged. Which means file is modified but has not been added/staged to git</p>
-                        </li>
+                    <li><h4>Modified / Unstaged Files</h4>
+                        <p>This is a file which is not staged. Which means file
+                            is modified but has not been added/staged to git</p>
+                    </li>
 
-                        <li><h4>Unmodified Files</h4>
+                    <li><h4>Unmodified Files</h4>
                         <p>An old committed file which is not changed.</p>
-                        </li>
+                    </li>
 
-                        <li><h4>Staged Files</h4>
-                        <p>Whenever we add a file either if it is a new file or modified file it is staged</p>
-                        </li>
+                    <li><h4>Staged Files</h4>
+                        <p>Whenever we add a file either if it is a new file or
+                            modified file it is staged</p>
+                    </li>
 
-                    </ul>
+                </ul>
             </li>
             <li>
                 <h3>Git Add "File Name" OR Git Add .</h3>
-                <p>This command is used to add a file to git repository.If we write git add . it will add all the files in the directory otherwise we can add an individual file by writing git add "File Name". After this command we can see the file in the staging area</p>
+                <p>This command is used to add a file to git repository.If we
+                    write git add . it will add all the files in the directory
+                    otherwise we can add an individual file by writing git add
+                    "File Name". After this command we can see the file in the
+                    staging area</p>
             </li>
             <li>
                 <h3>Git Commit -m "Message"</h3>
-                <p>This command is used to commit a file to git repository. Which means it will pickup the files from staging area and add it to the commit history which can be seen in git log and github.</p>
+                <p>This command is used to commit a file to git repository.
+                    Which means it will pickup the files from staging area and
+                    add it to the commit history which can be seen in git log
+                    and github.</p>
             </li>
             <li>
                 <h3>Git remote add origin "HTTPS Link of Github Repository"</h3>
-                <p>This command is necessary to run once to connect the local repository to github, after this command we can push the code to github</p>
+                <p>This command is necessary to run once to connect the local
+                    repository to github, after this command we can push the
+                    code to github</p>
             </li>
             <li>
                 <h3>Git Push</h3>
@@ -69,17 +81,52 @@
             </li>
             <li>
                 <h3>Git remote -v</h3>
-                <p>This command is used to view the address of connected remote repository.</p>
+                <p>This command is used to view the address of connected remote
+                    repository.</p>
             </li>
         </ol>
         <h2>Branches in Git</h2>
         <h3>Definition:</h3>
-        <p>Whenever two or more developers work on the same project they can create multiple branches. Creating branch means everyone is creating their own copy of the project of that poin from where branch is created.</p>
-        <br><br>
-        <h3>Git Branch Commands:</h3>
-        <h2>adil here  testing</h2>
-        <p>git push -u origin develop to push to new branch</p>
-
-
+        <p>Whenever two or more developers work on the same project they can
+            create multiple branches. Creating branch means everyone is creating
+            their own copy of the project of that poin from where branch is
+            created.</p>
+        <ol>
+            <li>
+                <h3>git branch</h3>
+                <p>This command is used to see all available branches</p>
+            </li>
+            <li>
+                <h3>git branch -M "Branch Name"</h3>
+                <p>This command is used to change the name of the current
+                    branch</p>
+            </li>
+            <li>
+                <h3>git checkout -b "Branch Name"</h3>
+                <p>This command is used to create a new
+                    branch, when we create a new branch by default we navigate
+                    to that branch</p>
+                <b>Note: When we create a new branch it means we are creating a
+                    copy of the project from the that point when branch is
+                    created</b>
+            </li>
+            <li>
+                <h3>git checkout "Branch Name"</h3>
+                <p>This command is used to navigate to a particular branch</p>
+            </li>
+            <li>
+                <h3>git branch -d "Branch Name"</h3>
+                <p>This command is used to delete the branch locally and keep
+                    working tree clean. We often use this branch once the
+                    feature on which we were working is merged to the main
+                    branch. It helps to clean the working tree</p>
+                <p><b>Note: We can't delete the main branch and to delete a
+                        branch first we must move from that branch</b></p>
+            </li>
+            <li>
+                <h3>git push origin --delete "Branch Name"</h3>
+                <p>This command is used to delete the branch from github</p>
+            </li>
+        </ol>
     </body>
 </html>
